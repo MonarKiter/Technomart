@@ -4,13 +4,19 @@
 <head>
   <meta charset="utf-8">
   <title>Интернет магазин "Техномарт"</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon/152.svg">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body>
   <header class="main-header">
     <div class="container">
       <div class="user-menu">
-        <a class="logo">Техномарт</a>
+        <a class="logo">
+          <img src="img/svg/logo-technomart.svg" alt="logo-technomart" width="108" height="18">
+        </a>
         <form action="#" method="get">
           <input type="search" name="s" placeholder="Поиск:">
           <button type="submit">Поиск</button>
@@ -276,7 +282,9 @@
   </main>
   <footer class="footer-main">
     <div class="container">
-      <a href="#" class="footer-logo">Техномарт</a>
+      <a href="#" class="footer-logo">
+        <img src="img/svg/logo-footer-technomart.svg" alt="logo-footer-technomart" width="138" height="23">
+      </a>
       <p class="footer-adress">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
       <a href="tel:+78005558628" class="footer-tel">+7 800 555-86-28</a>
       <ul class="footer-main-list">
@@ -328,5 +336,29 @@
       </div>
     </div>
   </footer>
+  <section class="modal feedback">
+    <h2 class="visually-hidden">Напишите нам</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label for="user-name">Ваше имя:</label>
+        <input class="user" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="user-mail">Ваше e-mail:</label>
+        <input class="user" id="user-mail" type="e-mail" name="mail" placeholder="e-mail@example">
+      </p>
+      <p>
+        <label for="user-text">Текст письма:</label>
+        <textarea name="user-text" id="user-text" cols="46" rows="11" placeholder="В свободной форме"></textarea>
+      </p>
+      <button type="submit" class="btn">Отправить</button>
+      <button class="modal-close" type="button">Закрыть</button>
+    </form>
+  </section>
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <!-- Здесь будет карта -->
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
 </body>
 </html>
