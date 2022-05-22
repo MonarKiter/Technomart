@@ -21,7 +21,7 @@
         </a>
         <form class="search" action="#" method="get">
           <button type="submit"></button>
-          <input type="search" name="s" placeholder="Поиск:">
+          <input class="search-placeholder" type="search" name="s" placeholder="Поиск:">
         </form>
         <ul class="user-list">
           <li class="user-item">
@@ -31,7 +31,7 @@
             <a href="#" class="user-link">Корзина:<span>0</span></a>
           </li>
           <li class="user-item">
-            <a href="#" class="user-link">Оформить заказ</a>
+            <a href="#" class="user-link user-link-btn">Оформить заказ</a>
           </li>
         </ul>
       </div>
@@ -42,12 +42,8 @@
           <p class="user-adress">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
         </div>
         <div id="user-auth">
-          <div id="link_register">
-            <a class="link_auth" href="#">Войти</a>
-          </div>
-          <div id="link_auth">
-            <a class="link_auth" href="#">Регистрация</a>
-          </div>
+          <a class="user-auth-link link_auth" href="#">Войти</a>
+          <a class="user-auth-link link_register" href="#">Регистрация</a>
         </div>
       </section>
       <nav class="nav-main">
@@ -164,7 +160,7 @@
       </section>
       <section class="producer">
         <div class="header-title">
-          <h2 class="producer-title title">Популярные производители:</h2>
+          <h2 class="producer-main-title title">Популярные производители:</h2>
           <a href="#" class="link-btn btn">Все производители</a>
         </div>
         <ul class="producer-list">
@@ -212,13 +208,13 @@
       </section>
       <section class="services">
         <h2 class="services-title title-second">Сервисы</h2>
-        <p class="services-subtitle text">Хороший интернет-магазин отличается от&nbsp;плохого не&nbsp;только ценами!
+        <p class="services-subtitle text">Хороший интернет-магазин отличается от&nbsp;плохого не&nbsp;только ценами!<br>
           Мы&nbsp;стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <div class="services-slider">
           <div class="services-slider-menu">
             <button class="list-btn list-btn-active" type="button">Доставка</button>
-            <button class="list-btn" type="button">Гарантия</button>
-            <button class="list-btn" type="button">Кредит</button>
+            <button class="list-btn list-btn-passiv" type="button">Гарантия</button>
+            <button class="list-btn list-btn-passiv" type="button">Кредит</button>
           </div>
           <ul class="services-slider-list">
             <li class="services-slider-item">
@@ -241,7 +237,8 @@
             </li>
             <li class="services-slider-item">
               <h3 class="services-slider-title title">Кредит</h3>
-              <p class="services-slider-subtitle text">Залезть в долговую яму стало проще! <br>Кредитные консультанты придут
+              <p class="services-slider-subtitle text">Залезть в долговую яму стало проще! <br>Кредитные консультанты
+                придут
                 вам на помощь.
               </p>
               <img src="img/credit.png" alt="Кредит" class="services-slider-img" width="465" height="285">
@@ -324,18 +321,28 @@
         <p class="footer-three-text">© 2010–2021 Компания «Техномарт»<br>Все права защищены</p>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a href="#" class="footer-social-link">Vk</a>
+            <a href="#" class="footer-social-link">
+              <img src="img/svg/vk-logo.svg" width="26" height="15" alt="Vkontakte">
+              <span class="visually-hidden">Vkontakte</span>
+            </a>
           </li>
           <li class="footer-social-item">
-            <a href="#" class="footer-social-link">fb</a>
+            <a href="#" class="footer-social-link">
+              <img src="img/svg/fb-logo.svg" width="12" height="22" alt="Facebook">
+              <span class="visually-hidden">Facebook</span>
+            </a>
           </li>
           <li class="footer-social-item">
-            <a href="#" class="footer-social-link">in</a>
+            <a href="#" class="footer-social-link">
+              <img src="img/svg/instagram-logo.svg" width="21" height="21" alt="Instagram">
+              <span class="visually-hidden">Instagram</span>
+            </a>
           </li>
         </ul>
         <p class="footer-three-connection">Обратная связь: <br><a class="footer-three-link"
             href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-        <p class="footer-three-connection">Разработано &mdash;<br><a class="footer-three-link" href="htmlacademy.ru">htmlacademy.ru</a></p>
+        <p class="footer-three-connection">Разработано &mdash;<br><a class="footer-three-link"
+            href="htmlacademy.ru">htmlacademy.ru</a></p>
       </div>
     </div>
   </footer>
