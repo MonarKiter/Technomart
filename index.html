@@ -21,15 +21,19 @@
             <img src="img/svg/logo-technomart.svg" alt="logo-technomart" width="108" height="18">
           </a>
           <form class="search" action="#" method="get">
-            <button type="submit"></button>
-            <input class="search-placeholder" type="search" name="s" placeholder="Поиск:">
+            <input class="search-placeholder" type="search" placeholder="Поиск:">
+            <button type="submit" class="search-submit">
+              <svg class="search-svg" width="17" height="17" viewbox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"/>
+                </svg>
+            </button>
           </form>
           <ul class="user-list">
             <li class="user-item">
-              <a href="#" class="user-link">Закладки:<span> 0</span></a>
+              <a href="#" class="user-link user-link-bookmark">Закладки:<span> 0</span></a>
             </li>
             <li class="user-item">
-              <a href="#" class="user-link">Корзина:<span> 0</span></a>
+              <a href="#" class="user-link user-link-cart">Корзина:<span> 0</span></a>
             </li>
             <li class="user-item">
               <a href="#" class="user-link user-link-btn">Оформить заказ</a>
@@ -103,24 +107,30 @@
         </li>
       </ul>
       <div class="wrapper">
-      <ul class="wrapper-list">
-        <li class="wrapper-slider wrapper-slider-first">
-          <p class="slider-title">Перфораторы</p>
-          <p class="slider-subtitle">Настоящие мужские игрушки</p>
-          <a href="#" class="slider-link btn">Открыть каталог</a>
-        </li>
-        <li class="wrapper-slider wrapper-slider-second">
-          <div class="slider-text">
-            <p class="slider-title">Дрели</p>
-            <p class="slider-subtitle">Соседям на радость!</p>
-          </div>
-          <a href="#" class="slider-link btn">Открыть каталог</a>
-        </li>
-      </ul>
-      <div class="pagination">
-            <a class="pagination-button" href="#">1</a>
-            <a class="pagination-button" href="#">2</a>
-          </div>
+        <ul class="wrapper-list ">
+          <li class="wrapper-slider slide slider-first slide-current">
+            <div class="slider-text">
+              <p class="slider-title">Перфораторы</p>
+              <p class="slider-subtitle">Настоящие мужские игрушки</p>
+            </div>
+            <a href="#" class="slider-link btn">Открыть каталог</a>
+          </li>
+          <li class="wrapper-slider slide slider-second">
+            <div class="slider-text">
+              <p class="slider-title">Дрели</p>
+              <p class="slider-subtitle">Соседям на радость!</p>
+            </div>
+            <a href="#" class="slider-link btn">Открыть каталог</a>
+          </li>
+        </ul>
+        <div class="pagination">
+          <button type="button" class="pagination-button current" aria-label="первый слайд" href="#"></button>
+          <button type="button" class="pagination-button " href="#" aria-label="второй слайд"></button>
+        </div>
+        <div class="paginator-arrow">
+          <button type="button" class="arrow-left" aria-label="первый слайд" href="#"></button>
+          <button type="button" class="arrow-right" aria-label="первый слайд" href="#"></button>
+        </div>
       </div>
     </section>
     <section class="popular container">
@@ -130,7 +140,7 @@
       </div>
       <ul class="catalog-list">
 
-        <li class="products-item product-item">
+        <li class="product-item">
           <a class="product-item-link" href="#">
             <div class="product-item-wrap">
               <h3 class="product-item-title">
@@ -142,11 +152,10 @@
                   height="128">
               </div>
             </div>
-            <s class="product-old-price" aria-label="Прошлая цена товара 32500 рублей">32500 Р.</s>
+            <p class="product-old-price" aria-label="Прошлая цена товара 32500 рублей">32500 Р.</p>
             <p class="product-new-price" aria-label="Новая цена товара 25500 рублей">25500 Р.</p>
             <div class="product-item-hidden">
-              <a class="product-item-buy" href="#"
-                aria-label="Положить в корзину перфоратор BOSCH BFG 6000">Купить</a>
+              <a class="product-item-buy" href="#" aria-label="Положить в корзину перфоратор BOSCH BFG 6000">Купить</a>
               <button class="product-item-add">В закладки</button>
             </div>
           </a>
@@ -164,11 +173,10 @@
                   height="128">
               </div>
             </div>
-            <s class="product-old-price" aria-label="Прошлая цена товара 22500 рублей">22500 Р.</s>
+            <p class="product-old-price" aria-label="Прошлая цена товара 22500 рублей">22500 Р.</p>
             <p class="product-new-price" aria-label="Новая цена товара 15500 рублей">15500 Р.</p>
             <div class="product-item-hidden">
-              <a class="product-item-buy" href="#"
-                aria-label="Положить в корзину перфоратор BOSCH BFG 6000">Купить</a>
+              <a class="product-item-buy" href="#" aria-label="Положить в корзину перфоратор BOSCH BFG 6000">Купить</a>
               <button class="product-item-add">В закладки</button>
             </div>
           </a>
@@ -186,11 +194,10 @@
                   height="128">
               </div>
             </div>
-            <s class="product-old-price" aria-label="Прошлая цена товара 30500 рублей">30500 Р.</s>
+            <p class="product-old-price" aria-label="Прошлая цена товара 30500 рублей">30500 Р.</p>
             <p class="product-new-price" aria-label="Новая цена товара 25500 рублей">25500 Р.</p>
             <div class="product-item-hidden">
-              <a class="product-item-buy" href="#"
-                aria-label="Положить в корзину перфоратор BOSCH BFG 6000">Купить</a>
+              <a class="product-item-buy" href="#" aria-label="Положить в корзину перфоратор BOSCH BFG 6000">Купить</a>
               <button class="product-item-add">В закладки</button>
             </div>
           </a>
@@ -208,11 +215,10 @@
                   height="128">
               </div>
             </div>
-            <s class="product-old-price" aria-label="Прошлая цена товара 32500 рублей">32500 Р.</s>
+            <p class="product-old-price" aria-label="Прошлая цена товара 32500 рублей">32500 Р.</p>
             <p class="product-new-price" aria-label="Новая цена товара 25500 рублей">25500 Р.</p>
             <div class="product-item-hidden">
-              <a class="product-item-buy" href="#"
-                aria-label="Положить в корзину перфоратор BOSCH BFG 6000">Купить</a>
+              <a class="product-item-buy" href="#" aria-label="Положить в корзину перфоратор BOSCH BFG 6000">Купить</a>
               <button class="product-item-add">В закладки</button>
             </div>
           </a>
@@ -233,7 +239,17 @@
         </li>
         <li class="producer-title">
           <a href="#" class="producer-link">
+            <img src="img/prod-5.png" alt="Hitachi" width="169" height="31">
+          </a>
+        </li>
+        <li class="producer-title">
+          <a href="#" class="producer-link">
             <img src="img/prod-2.png" alt="Makita" width="123" height="40">
+          </a>
+        </li>
+        <li class="producer-title">
+          <a href="#" class="producer-link">
+            <img src="img/prod-6.png" alt="Lg" width="121" height="73">
           </a>
         </li>
         <li class="producer-title">
@@ -243,27 +259,17 @@
         </li>
         <li class="producer-title">
           <a href="#" class="producer-link">
-            <img src="img/prod-4.png" alt="Интерскол" width="200" height="75">
+            <img src="img/prod-7.png" alt="AEG" width="151" height="98">
           </a>
         </li>
         <li class="producer-title">
           <a href="#" class="producer-link">
-            <img src="img/prod-5.png" alt="Hitachi" width="169" height="31">
+            <img src="img/prod-4.png" alt="Интерскол" width="200" height="76">
           </a>
         </li>
         <li class="producer-title">
           <a href="#" class="producer-link">
-            <img src="img/prod-6.png" alt="LG" width="121" height="73">
-          </a>
-        </li>
-        <li class="producer-title">
-          <a href="#" class="producer-link">
-            <img src="img/prod-7.png" alt="AEG" width="151" height="96">
-          </a>
-        </li>
-        <li class="producer-title">
-          <a href="#" class="producer-link">
-            <img src="img/prod-8.png" alt="metabo" width="126" height="37">
+            <img src="img/prod-8.png" alt="metabo" width="206" height="73">
           </a>
         </li>
       </ul>
@@ -280,32 +286,29 @@
             <button class="list-btn list-btn-passiv" type="button">Кредит</button>
           </div>
           <ul class="services-slider-list">
-            <li class="services-slider-item">
+            <li class="services-slider-item car-background slide">
               <h3 class="services-slider-title title">Доставка</h3>
               <p class="services-slider-subtitle text">Мы с удовольствием доставим ваш товар прямо<br>
                 к вашему подъезду совершенно бесплатно!<br>
                 Ведь мы неплохо заработаем,<br>
                 поднимая его на ваш этаж!
               </p>
-              <img src="img/delivery.png" alt="Машина" class="services-slider-img" width="468" height="261">
             </li>
-            <li class="services-slider-item">
+            <li class="services-slider-item warranty-background slide">
               <h3 class="services-slider-title title">Гарантия</h3>
               <p class="services-slider-subtitle text">Если купленный у нас товар поломается или заискрит, <br>
                 а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей
                 гарантии. Мы обменяем сгоревший товар на новый. <br>
                 Дом уж восстановите как-нибудь сами.
               </p>
-              <img src="img/warranty.png" alt="Гарантия" class="services-slider-img" width="389" height="283">
             </li>
-            <li class="services-slider-item">
+            <li class="services-slider-item credit-background slide-current">
               <h3 class="services-slider-title title">Кредит</h3>
-              <p class="services-slider-subtitle text">Залезть в долговую яму стало проще! <br>Кредитные консультанты
+              <p class="services-slider-subtitle services-slider-credit text">Залезть в долговую яму стало проще! <br>Кредитные консультанты
                 придут
                 вам на помощь.
               </p>
-              <img src="img/credit.png" alt="Кредит" class="services-slider-img" width="465" height="285">
-              <a href="#" class="btn">Отправить заявку</a>
+              <a href="#" class="btn services-btn">Отправить заявку</a>
             </li>
           </ul>
         </div>
@@ -338,7 +341,7 @@
             <p class="contacts-text">ЖелДорЭкспедиция</p>
           </li>
         </ul>
-        <a href="#" class="btn">подробнее о компании</a>
+        <a href="#" class="contacts-btn btn">подробнее о компании</a>
       </div>
       <div class="contacts-column-map">
         <h2 class="contacts-title title-second">Контакты</h2>
@@ -418,15 +421,13 @@
           </li>
         </ul>
         <div class="footer-three-wrap">
-        <p class="footer-three-connection">Обратная связь: <br>
-          <a class="footer-three-link"
-            href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <p class="footer-three-connection">Обратная связь: <br>
+            <a class="footer-three-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
-        <p class="footer-three-connection">Разработано &mdash;<br>
-          <a class="footer-three-link"
-            href="htmlacademy.ru">htmlacademy.ru</a>
+          <p class="footer-three-connection">Разработано &mdash;<br>
+            <a class="footer-three-link" href="htmlacademy.ru">htmlacademy.ru</a>
           </p>
-          </div>
+        </div>
       </div>
     </div>
   </footer>
